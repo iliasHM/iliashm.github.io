@@ -72,6 +72,18 @@
         items: 3,
     });
 
+    // Collapse Manifeste
+
+    $(function() {
+      $('div.expandCollapseContent').hide();
+      $('.placeHolder').hide();
+      $('img.expandCollapse').hover(function() {
+        var classe = '#' + this.id + 'Collapse';
+        $('.placeHolder').replaceWith($(classe).text());
+        $('.placeHolder').fadeToggle(1000);
+      });
+    });
+
     // Magnific Popup jQuery Lightbox Gallery Settings
     $('.gallery-link').magnificPopup({
         type: 'image',
@@ -150,7 +162,7 @@ $(document).ready(function() {
     if (isPhoneDevice) {
         //mobile
     } else {
-        //desktop               
+        //desktop
         // Initialize WOW.js
         wow = new WOW({
             offset: 50

@@ -545,12 +545,14 @@ aside.cta-quote span.quote {
   margin-top: 0;
 }
 .about-content {
-  padding: 30px;
-}
+/*  padding: 30px;
+*/}
 .round-pic {
   border-radius: 50%;
   width: 50%;
+  border: 3px #3aaa35 solid;
 }
+
 .about-carousel .item {
   padding: 15px;
 }
