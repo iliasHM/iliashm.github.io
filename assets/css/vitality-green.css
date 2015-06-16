@@ -14,7 +14,7 @@ body {
   margin-top: 30px;
 }
 section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 .bg-gray {
   background-color: #f5f5f5;
@@ -237,20 +237,29 @@ hr.colored {
     border-radius: 5px;
   }
   .navbar-fixed-top.navbar-expanded {
-    padding: 15px 0;
+    padding: 10px 0;
+  }
+  .navbar-fixed-top.navbar-expanded li a {
+    color: white;
   }
   .navbar-fixed-top {
-    padding: 15px 0;
+    padding: 10px 0;
     -webkit-transition: padding 0.5s;
     -moz-transition: padding 0.5s;
-    transition: padding 0.5s;
+    transition: background 1s;
   }
   .navbar-fixed-top .navbar-brand:hover {
     opacity: 0.5;
   }
+  .navbar-fixed-top ul {
+    margin-left: 100px;
+  }
+  .navbar-fixed-top li {
+    margin-right: 30px;
+  }
   .navbar-default.navbar-expanded,
   .navbar-inverse.navbar-expanded {
-    background: white;
+    background: transparent;
     border: none;
   }
 }
@@ -537,6 +546,10 @@ aside.cta-quote span.quote {
 }
 .about-content {
   padding: 30px;
+}
+.round-pic {
+  border-radius: 50%;
+  width: 50%;
 }
 .about-carousel .item {
   padding: 15px;
@@ -849,10 +862,9 @@ aside.cta-quote span.quote {
   border-color: #3aaa35;
 }
 #portfoliolist .portfolio {
-  width: 31%;
+  width: 25%;
   margin: 1%;
   display: none;
-  float: left;
   overflow: hidden;
 }
 #portfoliolist .portfolio .portfolio-wrapper {
@@ -860,6 +872,7 @@ aside.cta-quote span.quote {
   position: relative !important;
   background: #222222;
   cursor: pointer;
+  width: 300px;
 }
 #portfoliolist .portfolio .portfolio-wrapper img {
   max-width: 100%;
@@ -878,7 +891,7 @@ aside.cta-quote span.quote {
   bottom: -75px;
 }
 #portfoliolist .portfolio .portfolio-wrapper .caption .caption-bg {
-  background: #3aaa35;
+  background: #3273b8;
   width: 100%;
   height: 100%;
   position: absolute;
