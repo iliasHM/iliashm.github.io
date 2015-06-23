@@ -283,7 +283,10 @@ header {
   -o-background-size: cover;
   padding: 100px 0;
 }
-header .intro-content {
+section#video {
+  padding: 0px;
+}
+section .intro-content {
   color: white;
   text-align: center;
   position: relative;
@@ -292,11 +295,11 @@ header .intro-content {
   height: 0;
   overflow: hidden;
 }
-header .intro-content iframe{
+section .intro-content iframe{
 position: absolute;
-top: 120px;
-left: 0;
-width: 100%;
+top: 12.5%;
+left: 15%;
+width: 70%;
 height: 50%;
 }
 header .intro-quote {
