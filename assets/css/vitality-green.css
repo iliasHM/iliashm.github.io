@@ -582,6 +582,7 @@ aside.cta-quote span.quote {
 }
 .about-carousel .item .caption p {
   margin: 0;
+  color: rgba(255, 255, 255, 0.9);
 }
 .about-carousel .item .caption ul.social {
   margin-top: 5px;
@@ -750,7 +751,10 @@ aside.cta-quote span.quote {
     margin-top: 0;
   }
   .portfolio-carousel .item .project-details {
-    padding: 15% 0 0;
+    padding: 0;
+  }
+  .portfolio-carousel .item .project-details a {
+    margin: 20% 0 0;
   }
   .portfolio-carousel .item .project-details img.client-logo {
     margin: 0 auto 25px 0;
@@ -798,6 +802,9 @@ aside.cta-quote span.quote {
 }
 .portfolio-modal .modal-content img {
   margin: 30px auto;
+}
+.portfolio-modal .modal-content p {
+  padding: 30% 0;
 }
 .portfolio-modal .modal-content .item-details {
   margin: 30px 0;

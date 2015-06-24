@@ -77,21 +77,27 @@
     $(function() {
       $('div.expandCollapseContent').hide();
       $('#placeHolder').hide();
-      $('.expandCollapse').click(function() {
+      $('.expandCollapse').hover(function() {
         var classe = '#' + this.id + 'Collapse';
         if ($('#placeHolder').is(':visible') ) {
-          $('#placeHolder').slideUp(1000);
+          $('#placeHolder').slideUp(500);
         };
         if ($('#placeHolder').text() !== $(classe).text()){
           $('#placeHolder').slideUp(500, function() {
-            $('#placeHolder').html($(classe).text());
+            $('#placeHolder').html($(classe).html());
             $('#placeHolder').slideDown(500);
           });
         }else if (!$('#placeHolder').is(':visible')) {
-          $('#placeHolder').slideDown(1000);
+          $('#placeHolder').slideDown(500);
         };
       });
     });
+
+    $('.caption-content').hide();
+    $('.item').hover(function() {
+      jQuery(this).find($('.caption-title')).fadeToggle();
+      jQuery(this).find($('.caption-content')).fadeToggle(); } );
+
 
     // Magnific Popup jQuery Lightbox Gallery Settings
     $('.gallery-link').magnificPopup({
