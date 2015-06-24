@@ -305,7 +305,7 @@ height: 50%;
 header .intro-quote {
   position: absolute;
   text-align: center;
-  top: 70%;
+  top: 40%;
 }
 header .brand-name {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -316,9 +316,9 @@ header .brand-name {
   margin-top: 15px;
 }
 header .brand-name-subtext {
-  font-size: 13px;
+  font-size: 22px;
   color: white;
-  line-height: 20px;
+  line-height: 35px;
   margin-bottom: 20px;
   /*font-weight: 200;*/
 }
@@ -326,31 +326,32 @@ header img {
   max-width: 150px;
   max-height: 150px;
 }
+
 header .scroll-down {
   position: absolute;
   width: 100%;
-  bottom: 20px;
+  bottom: 20%;
   text-align: center;
 }
 header .scroll-down .btn {
   height: 50px;
   width: 50px;
-  border: 2px solid white;
+  border: 5px solid white;
   border-radius: 100% !important;
-  line-height: 50px;
+  line-height: 40px;
   padding: 0;
   letter-spacing: normal;
   color: white;
   font-size: 30px;
-  -webkit-transition: all 0.5s;
+  /*-webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
-  transition: all 0.5s;
+  transition: all 0.5s;*/
 }
-header .scroll-down .btn:hover {
+/*header .scroll-down .btn:hover {
   color: rgba(255, 255, 255, 0.5);
   border-color: rgba(255, 255, 255, 0.5);
   outline: none;
-}
+}*/
 @media (min-width: 768px) {
   header {
     height: 100%;
@@ -375,9 +376,9 @@ header .scroll-down .btn:hover {
     line-height: 80px;
   }
   header .brand-name-subtext {
-    font-size: 15px;
+    font-size: 22px;
     color: white;
-    line-height: 20px;
+    line-height: 35px;
     font-style: 400;
   }
   header .author-quote {

@@ -98,6 +98,13 @@
       jQuery(this).find($('.caption-title')).fadeToggle();
       jQuery(this).find($('.caption-content')).fadeToggle(); } );
 
+    $('#watch-video').hide();
+    $('header #play .btn').hover(function() {
+
+      $('#play').stop().fadeToggle();
+      $('#watch-video').stop().fadeToggle();
+
+       } );
 
     // Magnific Popup jQuery Lightbox Gallery Settings
     $('.gallery-link').magnificPopup({
