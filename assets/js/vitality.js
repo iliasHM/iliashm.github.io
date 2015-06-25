@@ -99,12 +99,78 @@
       jQuery(this).find($('.caption-content')).fadeToggle(); } );
 
     $('#watch-video').hide();
-    $('header #play .btn').hover(function() {
+    $('.scroll-down').hover(function() {
+      $('#play').stop().fadeToggle(200);
+      $('#watch-video').stop().fadeToggle(2000);
+    },
+      function() {
 
-      $('#play').stop().fadeToggle();
-      $('#watch-video').stop().fadeToggle();
-
+      $('#watch-video').stop().fadeToggle(200);
+      $('#play').stop().fadeToggle(2000);
        } );
+
+//animate cover CTA
+// var fnHeaderPlayButton = function(){
+//   var logo = jQuery('.scroll-down .btn-play'),
+//   left = logo.find('.left'),
+//   right = logo.find('.right'),
+//   center = logo.find('.center'),
+//   text = logo.find('.text'),
+//   animationFinished = true;
+
+//   //exclude feature on mobile
+//   if(jQuery(window).width() > 640){
+//     jQuery('.ynsect #ut-hero .hero-btn-holder .hero-btn').hover(function(){
+//       logo.addClass('hover');
+
+//       if(animationFinished === true){
+//         animationFinished = false;
+//         center.fadeOut(300,function(){
+//           logo.stop().animate({
+//           'width':300
+//           },300,'swing');
+//           left.stop().animate({
+//             'width':300
+//           },300,'swing');
+//           right.stop().animate({
+//             'width':300,
+//             'background-position':'-305px'
+//           },300,'swing');
+//           text.delay(300).fadeIn(300,function(){
+//             animationFinished = true;
+//           });
+//         });
+//       }
+
+//     },function(){
+//       logo.removeClass('hover');
+//       animationFinished = false;
+//       text.stop().fadeOut(300,function(){
+//         logo.stop().animate({
+//           'width':95
+//         },300,'swing');
+//         left.stop().animate({
+//           'width':95
+//         },300,'swing');
+//         right.stop().animate({
+//           'width':95,
+//           'background-position':'-505px'
+//         },300,'swing');
+
+
+//         text.stop().fadeOut(300);
+
+//         center.delay(300).stop().fadeIn(300,function(){
+//           animationFinished = true;
+//         });
+//       });
+//     });
+//   }
+
+// }
+
+
+
 
     // Magnific Popup jQuery Lightbox Gallery Settings
     $('.gallery-link').magnificPopup({

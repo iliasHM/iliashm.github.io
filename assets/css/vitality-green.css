@@ -352,6 +352,24 @@ header .scroll-down .btn {
   border-color: rgba(255, 255, 255, 0.5);
   outline: none;
 }*/
+header #watch-video a {
+  color: white;
+  font-size: 25px;
+}
+/*header #watch-video a:hover {
+  font-size: 27px;
+
+}*/
+
+
+/*header .btn-play .left {
+  position: absolute;
+  background: url('goutte-left.png');
+}
+header .btn-play .right {
+  position: absolute;
+  background: url('goutte-right.png');
+}*/
 @media (min-width: 768px) {
   header {
     height: 100%;
