@@ -28,6 +28,9 @@ section {
     padding: 75px 0;
   }
 }
+#springwave {
+  color: #36A9E1;
+}
 .owl-theme .owl-controls .owl-page span {
   background: rgba(34, 34, 34, 0.5);
 }
@@ -290,17 +293,18 @@ section .intro-content {
   color: white;
   text-align: center;
   position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
+  padding-bottom: 20%;
+  padding-top: 30%;
   height: 0;
   overflow: hidden;
 }
 section .intro-content iframe{
 position: absolute;
 top: 12.5%;
-left: 15%;
-width: 70%;
-height: 50%;
+bottom: 12.5%;
+left: 6%;
+width: 40%;
+height: 60%;
 }
 header .intro-quote {
   position: absolute;
@@ -574,9 +578,14 @@ aside.cta-quote span.quote {
   width: 50%;
   border: 3px #3aaa35 solid;
 }
+.square-pic {
+  border-radius: 0%;
+  width: 50%;
+}
 #enjeu, #spiruline {
   cursor: pointer;
 }
+
 .about-carousel .item {
   padding: 15px;
 }
@@ -704,6 +713,7 @@ aside.cta-quote span.quote {
   -o-background-size: cover;
   padding: 50px 55px;
   text-align: center;
+  height: 300px;
 }
 .portfolio-carousel .item .portfolio-image {
   margin-top: 0px;
@@ -762,8 +772,9 @@ aside.cta-quote span.quote {
 }
 @media (min-width: 992px) {
   .portfolio-carousel .item {
-    padding: 155px 55px 155px;
+    padding: 45px 185px 25px;
     text-align: left;
+    height: 300px;
     min-height: 100%;
   }
   .portfolio-carousel .item .portfolio-image {
