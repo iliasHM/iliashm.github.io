@@ -469,8 +469,7 @@ header.video .scroll-down {
   }
 }
 aside.cta-quote {
-  color: black;
-  opacity: 0.7;
+  color: white;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -479,12 +478,8 @@ aside.cta-quote {
   padding: 100px 0;
   text-align: center;
 }
-/*aside.container-quote {
-  opacity: 1;
-}*/
 
 aside.cta-quote span.quote {
-  opacity: 1;
   display: block;
   font-size: 30px;
   line-height: 32px;
@@ -525,11 +520,12 @@ aside.cta-quote span.quote {
 }
 .testimonials .testimonials-carousel .item .testimonial-info {
   margin-bottom: 30px;
+  height: 100px;
 }
 .testimonials .testimonials-carousel .item .testimonial-info .testimonial-img {
   display: inline-block;
-  height: 50px;
-  width: 50px;
+  height: 65px;
+  width: 100px;
   margin-right: 10px;
 }
 .testimonials .testimonials-carousel .item .testimonial-info .testimonial-author {
@@ -754,11 +750,26 @@ aside.cta-quote span.quote {
   text-align: center;
   height: 300px;
 }
+#chiffres {
+  background-color: white;
+  height: 500px;
+}
+#chiffres .owl-wrapper-outer {
+  height: 400px;
+}
+#chiffres .item {
+  height: 400px;
+}
 #timeline {
   background-color: white;
+  height: 700px;
+  padding-top: 40px;
+}
+#timeline .owl-wrapper-outer {
+  height: 800px;
 }
 #timeline .item {
-  height: 500px;
+  height: 600px;
 }
 .portfolio-carousel .item .portfolio-image {
   margin-top: 0px;
