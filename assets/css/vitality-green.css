@@ -158,7 +158,7 @@ hr.colored {
 }
 @media (min-width: 768px) {
   hr {
-    max-width: 300px;
+    max-width: 380px;
     margin: 20px auto;
   }
   hr.left {
@@ -306,6 +306,25 @@ left: 6%;
 width: 40%;
 height: 60%;
 }
+section .intro-content #text-video {
+  color: black;
+  position: absolute;
+  display: table;
+  top: 35%;
+}
+section .intro-content .vertically {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}
+
+/*section .intro-content #text-video::before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}*/
 header .intro-quote {
   position: absolute;
   text-align: center;
@@ -450,8 +469,8 @@ header.video .scroll-down {
   }
 }
 aside.cta-quote {
-  color: white;
-  background-color: #222222;
+  color: black;
+  opacity: 0.7;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -460,7 +479,12 @@ aside.cta-quote {
   padding: 100px 0;
   text-align: center;
 }
+/*aside.container-quote {
+  opacity: 1;
+}*/
+
 aside.cta-quote span.quote {
+  opacity: 1;
   display: block;
   font-size: 30px;
   line-height: 32px;
@@ -580,7 +604,7 @@ aside.cta-quote span.quote {
 }
 .square-pic {
   border-radius: 0%;
-  width: 50%;
+  width: 70%;
 }
 #enjeu, #spiruline {
   cursor: pointer;
@@ -601,8 +625,22 @@ aside.cta-quote span.quote {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+.about-carousel .item .back-img {
+  background-color: black;
+}
+.about-carousel .item img {
+  opacity: 0.6;
+}
 .about-carousel .item .caption h3 {
   margin: 0;
+}
+.about-carousel .item .caption-title {
+  top: 40%;
+}
+.about-carousel .item .caption-img {
+  width: 75%;
+  top: 60%;
+  opacity: 0.7;
 }
 .about-carousel .item .caption hr {
   margin: 5px auto;
@@ -704,6 +742,7 @@ aside.cta-quote span.quote {
   color: white;
   background-color: #222222;
 }
+
 .portfolio-carousel .item {
   background-color: #222222;
   background: no-repeat center center scroll;
@@ -714,6 +753,12 @@ aside.cta-quote span.quote {
   padding: 50px 55px;
   text-align: center;
   height: 300px;
+}
+#timeline {
+  background-color: white;
+}
+#timeline .item {
+  height: 500px;
 }
 .portfolio-carousel .item .portfolio-image {
   margin-top: 0px;

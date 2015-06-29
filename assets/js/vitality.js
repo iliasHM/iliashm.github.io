@@ -96,6 +96,7 @@
     $('.caption-content').hide();
     $('.item').hover(function() {
       jQuery(this).find($('.caption-title')).fadeToggle();
+      jQuery(this).find($('.caption-img')).fadeToggle();
       jQuery(this).find($('.caption-content')).fadeToggle(); } );
 
     $('#watch-video').hide();
