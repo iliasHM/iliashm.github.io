@@ -72,43 +72,43 @@
         items: 3,
     });
 
-    // Collapse Manifeste
+    // // Collapse Manifeste
 
-    $(function() {
-      $('div.expandCollapseContent').hide();
-      $('#placeHolder').hide();
-      $('.expandCollapse').hover(function() {
-        var classe = '#' + this.id + 'Collapse';
-        if ($('#placeHolder').is(':visible') ) {
-          $('#placeHolder').slideUp(500);
-        };
-        if ($('#placeHolder').text() !== $(classe).text()){
-          $('#placeHolder').slideUp(500, function() {
-            $('#placeHolder').html($(classe).html());
-            $('#placeHolder').slideDown(500);
-          });
-        }else if (!$('#placeHolder').is(':visible')) {
-          $('#placeHolder').slideDown(500);
-        };
-      });
-    });
+    // $(function() {
+    //   $('div.expandCollapseContent').hide();
+    //   $('#placeHolder').hide();
+    //   $('.expandCollapse').hover(function() {
+    //     var classe = '#' + this.id + 'Collapse';
+    //     if ($('#placeHolder').is(':visible') ) {
+    //       $('#placeHolder').slideUp(500);
+    //     };
+    //     if ($('#placeHolder').text() !== $(classe).text()){
+    //       $('#placeHolder').slideUp(500, function() {
+    //         $('#placeHolder').html($(classe).html());
+    //         $('#placeHolder').slideDown(500);
+    //       });
+    //     }else if (!$('#placeHolder').is(':visible')) {
+    //       $('#placeHolder').slideDown(500);
+    //     };
+    //   });
+    // });
 
-    $('.caption-content').hide();
-    $('.item').hover(function() {
-      jQuery(this).find($('.caption-title')).fadeToggle();
-      jQuery(this).find($('.caption-img')).fadeToggle();
-      jQuery(this).find($('.caption-content')).fadeToggle(); } );
+    // $('.caption-content').hide();
+    // $('.item').hover(function() {
+    //   jQuery(this).find($('.caption-title')).fadeToggle();
+    //   jQuery(this).find($('.caption-img')).fadeToggle();
+    //   jQuery(this).find($('.caption-content')).fadeToggle(); } );
 
-    $('#watch-video').hide();
-    $('.scroll-down').hover(function() {
-      $('#play').stop().fadeToggle(200);
-      $('#watch-video').stop().fadeToggle(2000);
-    },
-      function() {
+    // $('#watch-video').hide();
+    // $('.scroll-down').hover(function() {
+    //   $('#play').stop().fadeToggle(200);
+    //   $('#watch-video').stop().fadeToggle(2000);
+    // },
+    //   function() {
 
-      $('#watch-video').stop().fadeToggle(200);
-      $('#play').stop().fadeToggle(2000);
-       } );
+    //   $('#watch-video').stop().fadeToggle(200);
+    //   $('#play').stop().fadeToggle(2000);
+    //    } );
 
 //animate cover CTA
 // var fnHeaderPlayButton = function(){
@@ -170,6 +170,91 @@
 
 // }
 
+
+    // Home switcher
+    $(document).ready(function(){
+      // function change_background( new_image_source ) {
+      //   var myimage = $( '#header1' );
+      //   myimage.css( 'background-image', new_image_source );
+      // };
+      // setTimeout( function () {
+      //   change_background( "url('assets/img/visuels/foule-filtre.png')" );
+      // }, 3000);
+
+      window.setInterval(function(){
+        window.setTimeout(function(){
+            $('#header1').animate({opacity: 0}, 'slow', function() {
+              $('.intro-quote').css('color', 'white');
+              $('#header1 hr').css('border-top', 'white 2px solid');
+              $('#header1 p').css('color', 'white');
+              $('#header1 a').css('color', 'white').css('border-color', 'white');
+              $(this)
+                  .css('background-image', "url('assets/img/visuels/paysage-filtre.png')")
+                  .animate({opacity: 1});
+              });
+
+            // $('#header1').css('background-image', "url('assets/img/visuels/paysage-filtre.png')");
+            // $('#header1').stop().fadeIn();
+        },5000);
+          $('#header1').animate({opacity: 0}, 'slow', function() {
+            $('.intro-quote').css('color', 'black');
+            $('#header1 hr').css('border-top', 'black 2px solid');
+            $('#header1 p').css('color', 'black');
+            $('#header1 a').css('color', 'black').css('border-color', 'black');
+            $(this)
+                .css('background-image', "url('assets/img/visuels/foule-filtre.png')")
+                .animate({opacity: 1});
+
+            });
+            // $('#header1').stop().css('background-image', "url('assets/img/visuels/foule-filtre.png')");
+            // $('#header1').stop().fadeIn();
+
+            // $('#header2').fadeIn();
+        },10000);
+
+
+
+      // Collapse Manifeste
+
+      $(function() {
+        $('div.expandCollapseContent').hide();
+        $('#placeHolder').hide();
+        $('.expandCollapse').hover(function() {
+          var classe = '#' + this.id + 'Collapse';
+          if ($('#placeHolder').is(':visible') ) {
+            $('#placeHolder').slideUp(500);
+          };
+          if ($('#placeHolder').text() !== $(classe).text()){
+            $('#placeHolder').slideUp(500, function() {
+              $('#placeHolder').html($(classe).html());
+              $('#placeHolder').slideDown(500);
+            });
+          }else if (!$('#placeHolder').is(':visible')) {
+            $('#placeHolder').slideDown(500);
+          };
+        });
+      });
+
+      $('.caption-content').hide();
+      $('.item').hover(function() {
+        jQuery(this).find($('.caption-title')).fadeToggle();
+        jQuery(this).find($('.caption-img')).fadeToggle();
+        jQuery(this).find($('.caption-content')).fadeToggle(); } );
+
+      $('#watch-video').hide();
+      $('.scroll-down').hover(function() {
+        $('#play').stop().fadeToggle(200);
+        $('#watch-video').stop().fadeToggle(2000);
+      },
+        function() {
+
+        $('#watch-video').stop().fadeToggle(200);
+        $('#play').stop().fadeToggle(2000);
+         } );
+
+
+
+    });
 
 
 
