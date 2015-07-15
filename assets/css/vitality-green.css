@@ -3,6 +3,54 @@
  * Copyright 2013-2015 Start Bootstrap Themes
  * To use this theme you must have a license purchased at WrapBootstrap (https://wrapbootstrap.com)
  */
+/* Font used for the quotes */
+@font-face {
+    font-family: 'theanodidot-regular';
+    src: url('../fonts/anodidot/theanodidot-regular-webfont.eot');
+    src: url('../fonts/anodidot/theanodidot-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/anodidot/theanodidot-regular-webfont.woff2') format('woff2'),
+         url('../fonts/anodidot/theanodidot-regular-webfont.woff') format('woff'),
+         url('../fonts/anodidot/theanodidot-regular-webfont.ttf') format('truetype'),
+         url('../fonts/anodidot/theanodidot-regular-webfont.svg#theano_didotregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Font used for the rest */
+@font-face {
+    font-family: 'gotham-book-regular';
+    src: url('../fonts/gotham/gotham-book/gotham-book-webfont.eot');
+    src: url('../fonts/gotham/gotham-book/gotham-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham/gotham-book/gotham-book-webfont.woff2') format('woff2'),
+         url('../fonts/gotham/gotham-book/gotham-book-webfont.woff') format('woff'),
+         url('../fonts/gotham/gotham-book/gotham-book-webfont.ttf') format('truetype'),
+         url('../fonts/gotham/gotham-book/gotham-book-webfont.svg#gotham_bookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gotham-xlight';
+    src: url('gotham-xlight-webfont.eot');
+    src: url('gotham-xlight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gotham-xlight-webfont.woff2') format('woff2'),
+         url('gotham-xlight-webfont.woff') format('woff'),
+         url('gotham-xlight-webfont.ttf') format('truetype'),
+         url('gotham-xlight-webfont.svg#gotham_extralightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gotham-bold';
+    src: url('../fonts/gotham/gotham-bold/gotham-bold-webfont.eot');
+    src: url('../fonts/gotham/gotham-bold/gotham-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham/gotham-bold/gotham-bold-webfont.woff2') format('woff2'),
+         url('../fonts/gotham/gotham-bold/gotham-bold-webfont.woff') format('woff'),
+         url('../fonts/gotham/gotham-bold/gotham-bold-webfont.ttf') format('truetype'),
+         url('../fonts/gotham/gotham-bold/gotham-bold-webfont.svg#gotham_boldregular') format('svg');
+    font-weight: normal;
+    font-style: bold;
+}
 html,
 body {
   height: 100%;
@@ -97,7 +145,7 @@ fieldset[disabled] .btn-primary.active {
   background-color: #ffffff;
 }
 body {
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 300;
 }
@@ -117,8 +165,9 @@ p {
   line-height: 1.5;
 }
 p.lead {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "gotham-book-regular" "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
+  font-style: bold;
   text-transform: uppercase;
   font-size: 24px;
 }
@@ -128,13 +177,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
   text-transform: uppercase;
 }
 @media (min-width: 481px) {
   h1 {
-    font-size: 52px;
+    font-size: 43px;
+    letter-spacing: 30px;
   }
   h2 {
     font-size: 50px;
@@ -288,34 +338,48 @@ header {
 }
 section#video {
   padding: 0px;
+  height: 400px;
 }
 section .intro-content {
   color: white;
+  background-color: #3778bc;
   text-align: center;
   position: relative;
-  padding-bottom: 20%;
-  padding-top: 30%;
-  height: 0;
+  height: 400px;
   overflow: hidden;
 }
 section .intro-content iframe{
 position: absolute;
-top: 12.5%;
-bottom: 12.5%;
-left: 6%;
-width: 40%;
-height: 60%;
+/*bottom: 12.5%;
+left: 6%;*/
+width: 50%;
+height: 100%;
 }
 section .intro-content #text-video {
-  color: black;
+  color: white;
   position: absolute;
   display: table;
-  top: 35%;
+  top: 22%;
 }
 section .intro-content .vertically {
   display: table-cell;
   vertical-align: middle;
   height: 100%;
+}
+section .intro-content .vertically .video-title {
+  font-family: "gotham-bold";
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: left;
+  line-height: 0.5;
+  letter-spacing: 1px;
+  font-size: 28px;
+}
+section .intro-content .vertically .video-subtitle {
+  text-align: left;
+  font-size: 17px;
+  line-height: 1.3;
+  margin-top: 30px;
 }
 
 /*section .intro-content #text-video::before {
@@ -340,14 +404,26 @@ header .brand-name {
   margin-top: 15px;
 }
 header .brand-name-subtext {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 22px;
   line-height: 35px;
   margin-bottom: 20px;
-  /*font-weight: 200;*/
+  font-weight: 200;
+  text-transform: uppercase;
+  position: absolute;
+  top: -40px;
+  width: 100%;
+}
+header .brand-name-subtext p {
+  font-size: 22px;
+  line-height: 35px;
 }
 header img {
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 100px;
+  max-height: 100px;
+  position: absolute;
+  top: -130px;
+  left: 38%;
 }
 
 header .scroll-down {
@@ -359,10 +435,11 @@ header .scroll-down {
 header .scroll-down .btn {
   height: 50px;
   width: 50px;
-  border: 5px solid white;
+  border: 3px solid white;
   border-radius: 100% !important;
   line-height: 40px;
   padding: 0;
+  padding-left: 4px;
   letter-spacing: normal;
   color: white;
   font-size: 30px;
@@ -394,6 +471,49 @@ header .btn-play .right {
   position: absolute;
   background: url('goutte-right.png');
 }*/
+section#manifeste-titre {
+  color: #3778bc;
+}
+section#about {
+  padding: 0px;
+}.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}.content-row {
+  margin-top: 0px;
+}
+
+aside.cta-quote .container-quote {
+  padding-top: 8%;
+}
+aside.cta-quote div.author {
+  text-align: left;
+  margin-left: 15px;
+  padding-top: 30px;
+}
+
+section#about div#haut-potentiel {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  color: white;
+  font-weight: 200;
+}
+
+section#about div#text-enjeu {
+  position: absolute;
+  width: 80%;
+  top: 10%;
+  text-align: left;
+  color: white;
+  font-weight: 100;
+  padding-left: 50px;
+}
+
+section#about img {
+  -webkit-filter: blur(3px); filter: blur(3px);
+}
+
 @media (min-width: 768px) {
   header {
     height: 100%;
@@ -440,13 +560,13 @@ header .btn-play .right {
     width: 300px;
   }
   header img {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 200px;
+    max-height: 200px;
   }
 }
 @media (min-width: 1025px) {
   header {
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
   }
 }
 header.video .overlay {
@@ -475,33 +595,36 @@ aside.cta-quote {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  padding: 100px 0;
+  /*padding: 100px 0;*/
+  height: 350px;
   text-align: center;
 }
 
 aside.cta-quote span.quote {
+
   display: block;
   font-size: 30px;
-  line-height: 32px;
+  line-height: 50px;
   font-weight: 300;
+  text-align: left;
 }
 @media (min-width: 768px) {
   aside.cta-quote {
     background-attachment: scroll;
-    padding: 150px 0;
+    /*padding: 150px 0;*/
   }
   aside.cta-quote span.quote {
     font-size: 36px;
-    line-height: 38px;
+    line-height: 50px;
   }
 }
 @media (min-width: 992px) {
   aside.cta-quote {
-    padding: 300px 0;
+    /*padding: 300px 0;*/
   }
   aside.cta-quote span.quote {
     font-size: 40px;
-    line-height: 42px;
+    line-height: 50px;
   }
 }
 @media (min-width: 1025px) {
@@ -600,10 +723,7 @@ aside.cta-quote span.quote {
 }
 .square-pic {
   border-radius: 0%;
-  width: 80%;
-}
-#enjeu, #spiruline {
-  cursor: pointer;
+  width: 100%;
 }
 
 .about-carousel .item {
@@ -786,7 +906,8 @@ aside.cta-quote span.quote {
   font-size: 40px;
   line-height: 40px;
   margin-bottom: 5px;
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "gotham-book-regular", "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: bold;
   font-weight: 900;
   text-transform: uppercase;
 }

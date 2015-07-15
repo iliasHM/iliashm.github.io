@@ -17,7 +17,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900' rel='stylesheet' type='text/css'>
     <!-- Modern Style Fonts (Include these is you are using body.modern!) -->
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
     <!-- Vintage Style Fonts (Include these if you are using body.vintage!) -->
     <link href='http://fonts.googleapis.com/css?family=Sanchez:400italic,400' rel='stylesheet' type='text/css'>
@@ -49,7 +49,7 @@
 </head>
 <!-- Alternate Body Classes: .modern and .vintage -->
 
-<body class="vintage" id="page-top">
+<body id="page-top">
     <!-- Navigation -->
     <!-- Note: navbar-default and navbar-inverse are both supported with this theme. -->
     <nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
@@ -94,7 +94,7 @@
         </div>
         <!-- /.container -->
     </nav>
-    <header style="background-image: url('assets/img/visuels/paysage-filtre.png');" id="header1">
+    <header style="background-image: url('assets/img/visuels/img1_home.jpg');" id="header1">
         <!-- <div class="intro-content">
 
             <iframe src="https://www.youtube.com/embed/Taj1K4KKBUk?&theme=dark&color=white&autohide=1&modestbranding=1&rel=0" frameborder="0" allowfullscreen></iframe>
@@ -105,12 +105,17 @@
             <div class="brand-name-subtext">by Start Bootstrap</div>
         </div> -->
         <div class="intro-quote col-lg-8 col-lg-offset-2">
-          <div class="brand-name-subtext">"Le grand défi du XXIème siècle est de réussir à alimenter 9 milliards d'individus tout en maintenant les écosystèmes & la biodiversité viables."</div>
-          <div class="author-quote">
+          <img src="assets/img/logo-white.png" alt="">
+          <div class="brand-name-subtext">
+            <p>Pour une alimentation saine, savoureuse et durable,</p>
+            <p>utilisant pleinement le potentiel nutritif unique</p>
+            <p>des microalgues.</p>
+          </div>
+          <!-- <div class="author-quote">
             <hr style="border-bottom: none;">
               <p>Jean-Louis Etienne</p>
               <p style="  font-style: italic; font-size: 12px;">Docteur en Médecine</p>
-          </div>
+          </div> -->
         </div>
         <!-- <div class="scroll-down btn-play" style="width:100px;">
           <div class="left" style="width:100px;"></div>
@@ -118,12 +123,15 @@
           <div class="text" style="display:none;"></div>
           <div class="right" style="width:100px;"></div>
         </div> -->
-        <div class="scroll-down" id="play">
-            <a class="btn page-scroll"  href="#video"><i class="fa fa-angle-right fa-fw"></i></a>
+
+        <!-- bouton play - découvrir la vidéo -->
+
+        <!-- <div class="scroll-down" id="play">
+            <a class="btn page-scroll"  href="#video"><i class="fa fa-play fa-fw"></i></a>
         </div>
         <div class="scroll-down" id="watch-video">
             <a class="page-scroll"  href="#video">Découvrez la vidéo</a>
-        </div>
+        </div> -->
     </header>
     <!-- <header style="background-image: url('assets/img/visuels/foule-filtre.png'); display:none;" id="header2">
         <div class="intro-quote col-lg-8 col-lg-offset-2">
@@ -144,15 +152,28 @@
 
     <section id="video">
       <div class="intro-content">
-        <iframe src="https://www.youtube.com/embed/Taj1K4KKBUk?&theme=dark&color=white&autohide=1&modestbranding=1&rel=0" frameborder="0" allowfullscreen></iframe>
-
-        <div class="col-md-6 col-md-offset-6" id="text-video">
+        <div class="col-md-6" id="text-video">
           <div class="vertically">
-            <h3>Texte Vidéo</h3>
-            <span>Présentation de Algama</span>
-          </div>
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <h3 class="video-title">Algama,</h3> <br>
+                <h3 class="video-title">Plateforme d'innovation</h3> <br>
+                <h3 class="video-title">alimentaire.</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <p class="video-subtitle">Elaborés avec des professionnels de la gastronomie, les produits alimentaires Algama répondent, avec innovation et plaisir, au besoin d'une alimentation alternative et d'une meilleure santé pour tous.</p>
+              </div>
+            </div>
+            <!-- <hr style="border-bottom: none; border-top: 1px black solid; width: 30%;"> -->
 
+          </div>
         </div>
+
+        <iframe width="500" height="350" src="https://www.youtube.com/embed/Taj1K4KKBUk?&theme=dark&color=white&autohide=1&modestbranding=1&rel=0" frameborder="0" allowfullscreen></iframe>
+
+
 
           <!-- <img src="assets/img/profile.png" class="img-responsive img-centered" alt="">
           <div class="brand-name">Vitality</div>
@@ -163,40 +184,70 @@
           <a class="btn page-scroll" href="#video"><i class="fa fa-angle-down fa-fw"></i></a>
       </div> -->
     </section>
+
+    <aside class="cta-quote" style="background-image: url('assets/img/visuels/citation1.jpg');">
+          <div class="container wow fadeIn">
+              <div class="row">
+                  <div class="col-md-10 col-md-offset-1">
+                    <div class="container-quote">
+                      <span class="quote">
+                        "La destinée des nations dépend
+                      </span>
+                      <span class="quote" style="margin-left: 15px;">
+                        de la manière dont elles se nourissent."
+                      </span>
+                      <div class="author">
+                        <p>Jean-Anthelme Brillat-Savarin</p>
+                        <p style="font-size: 15px;"><em>La physiologie du goût (1825)</em></p>
+                      </div>
+                      <!-- <span class="quote">Good <span class="text-primary">design</span> is finding that perfect balance between the way something <span class="text-primary">looks</span> and how it <span class="text-primary">functions</span>.</span> -->
+                      <!-- <hr style="border-bottom: none; border-top: 2px white solid;"> -->
+                      <!-- <span> Jacques Vincent, <em>Ex Vice PDG de Danone</em> </span> -->
+                      <!-- <a class="btn btn-outline-light page-scroll" href="#contact">Let's Find It</a> -->
+                    </div>
+                  </div>
+              </div>
+          </div>
+    </aside>
+
+    <section id="manifeste-titre">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-lg-12 wow fadeIn">
+            <h1 class="section-title">Manifeste</h1>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="about">
-        <div class="container-fluid">
-            <div class="row text-center">
-                <div class="col-lg-12 wow fadeIn">
-                    <h1>Manifeste</h1>
-                    <!-- <p>Vitality is the perfect theme for a freelance professional or an agency.</p> -->
-                    <hr class="colored">
+      <div class="container-fluid">
+        <div class="row text-center content-row">
+          <div class="col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".2s" style="padding-left: 0px; padding-right: 0px;">
+            <div class="about-content">
+              <div href="#placeHolder" class="pic">
+                <div id="text-enjeu">
+                  <h4>En 2050, la Terre sera peuplée de 25 milliards d'habitants</h4>
+                  <p>La filière agroalimentaire devra faire face à l'augmentation de la demande alimentaire, avec en parallèle des enjeux majeurs de disponibilité des ressources et de dégradation de l'environnement. Dans ce contexte, ALGAMA s'engage dans une ambition de création et de production d'alimentation alternative, au profit de tous.</p>
                 </div>
+                <img id="enjeu" class="expandCollapse square-pic" src="assets/img/visuels/foule.jpg" alt="first-picture">
+              </div>
+
+                    <!-- <hr style="border-bottom: none; border-top: 3px black solid;"> -->
             </div>
-            <div class="row text-center content-row">
-                <div class="col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".2s">
-                    <div class="about-content">
-                        <!-- <i class="fa fa-eye fa-4x"></i> -->
-                        <!-- <h3>Retina Ready</h3> -->
-                        <div href="#placeHolder" class="pic">
-                          <img id="enjeu" class="expandCollapse square-pic" src="assets/img/visuels/manifest-1.png" alt="first-picture">
-                        </div>
-                        <!-- <hr style="border-bottom: none; border-top: 3px black solid;"> -->
-                          <h3>Un enjeu planétaire</h3>
-                        <hr style="border-bottom: none; border-top: 1px black solid;">
+          </div>
+          <div class="col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".2s" style="padding-left: 0px; padding-right: 0px;">
+              <div class="about-content">
+
+                  <div href="#placeHolder" class="pic">
+                    <div id="haut-potentiel">
+                      <h2>Une solution à </h2>
+                      <h2>haut potentiel</h2>
                     </div>
-                </div>
-                <div class="col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".2s">
-                    <div class="about-content">
-                        <!-- <i class="fa fa-eye fa-4x"></i> -->
-                        <!-- <h3>Retina Ready</h3> -->
-                        <div href="#placeHolder" class="pic">
-                          <img id="spiruline" class="expandCollapse square-pic" src="assets/img/visuels/manifest-2.png" alt="first-picture">
-                        </div>
-                        <!-- <hr style="border-bottom: none; border-top: 3px black solid;"> -->
-                          <h3>Un potentiel méconnu</h3>
-                        <hr style="border-bottom: none; border-top: 1px black solid;">
-                    </div>
-                </div>
+                    <img id="spiruline" class="expandCollapse square-pic" src="assets/img/visuels/spiru-1.jpg" alt="first-picture">
+                  </div>
+
+              </div>
+          </div>
                 <!-- <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".6s">
                     <div class="about-content">
                         <i class="fa fa-tablet fa-4x"></i>
@@ -211,13 +262,13 @@
                         <p>All of our themes are crafted with care, and we strive to make your experience as one of our customers the best as possible.</p>
                     </div>
                 </div> -->
-            </div>
-            <div class="row content-row">
-              <!-- <img src="img/etape2.png" width="70%"><br> -->
+        </div>
+            <!-- <div class="row content-row">
+
               <div id="placeHolder" class="col-lg-8 col-lg-offset-2">
               </div>
-            </div>
-            <div id="enjeuCollapse" class="expandCollapseContent">
+            </div> -->
+            <!-- <div id="enjeuCollapse" class="expandCollapseContent">
               <ul>
                   <li>Augmentation de la demande alimentaire</li>
                   <li>Raréfaction de la disponibilité des ressources</li>
@@ -232,12 +283,12 @@
                   <li>Ces micro-organismes sont constitués de différents composants d’intérêt et présentent un immense potentiel en termes de bénéfices nutritionnels et santé.</li>
                   <li>La spiruline, microalgue « star » contient : (je te fournis le visuel par mail également)</li>
               </ul>
-            </div>
+            </div> -->
             <!-- <div class="row text-center content-row"> -->
               <!-- <img src="img/etape2.png" width="70%"><br> -->
 
             <!-- </div> -->
-        </div>
+      </div>
     </section>
     <section class="portfolio-carousel wow fadeIn" id="chiffres">
       <div class="container-fluid">
@@ -450,22 +501,7 @@
         </div> -->
     </section>
 
-    <aside class="cta-quote" style="background-image: url('assets/img/visuels/jeunes.jpg');">
-          <div class="container wow fadeIn">
-              <div class="row">
-                  <div class="col-md-10 col-md-offset-1">
-                    <div class="container-quote">
-                      <span class="quote">"Algama a pour ambition de révolutionner le marché de l'agroalimentaire avec des produits innovants, en phase avec leur temps."</span>
-                      <!-- <span class="quote">Good <span class="text-primary">design</span> is finding that perfect balance between the way something <span class="text-primary">looks</span> and how it <span class="text-primary">functions</span>.</span> -->
-                      <hr style="border-bottom: none; border-top: 2px white solid;">
-                      <span> Jacques Vincent, <em>Ex Vice PDG de Danone</em> </span>
-                      <!-- <a class="btn btn-outline-light page-scroll" href="#contact">Let's Find It</a> -->
-                      <span></span>
-                    </div>
-                  </div>
-              </div>
-          </div>
-    </aside>
+
     <!-- <section class="portfolio-carousel wow fadeIn" id="timeline">
       <div class="item" style="background-image: url('assets/img/visuels/timeline.png')">
           <div class="container text-center wow fadeIn">
