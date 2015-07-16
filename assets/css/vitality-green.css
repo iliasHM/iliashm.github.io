@@ -184,7 +184,7 @@ h6 {
 @media (min-width: 481px) {
   h1 {
     font-size: 43px;
-    letter-spacing: 30px;
+    letter-spacing: 25px;
   }
   h2 {
     font-size: 50px;
@@ -471,11 +471,12 @@ header .btn-play .right {
   position: absolute;
   background: url('goutte-right.png');
 }*/
-section#manifeste-titre {
+section#manifeste-titre, section#metiers-titre {
   color: #3778bc;
 }
-section#about {
+section#about, section#metiers {
   padding: 0px;
+  height: 430px;
 }.container-fluid {
   padding-left: 0px;
   padding-right: 0px;
@@ -497,22 +498,43 @@ section#about div#haut-potentiel {
   width: 100%;
   top: 30%;
   color: white;
-  font-weight: 200;
+}
+section#about div#haut-potentiel h2 {
+  font-weight: 100;
+}
+
+section#metiers div#RD, section#metiers div#marketing {
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  text-align: center;
+  color: white;
+  letter-spacing: 3px;
+}
+
+section#metiers div#marketing img {
+  padding-bottom: 30px;
 }
 
 section#about div#text-enjeu {
   position: absolute;
   width: 80%;
-  top: 10%;
-  text-align: left;
+  top: 17%;
+  text-align: justify;
   color: white;
-  font-weight: 100;
-  padding-left: 50px;
+  padding-left: 20%;
 }
+section#about div#text-enjeu h4 {
+    font-weight: 100;
+    font-size: 22px;
+  }
+section#about div#text-enjeu p {
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+  }
 
-section#about img {
-  -webkit-filter: blur(3px); filter: blur(3px);
-}
 
 @media (min-width: 768px) {
   header {
@@ -872,14 +894,31 @@ aside.cta-quote span.quote {
 }
 #chiffres {
   background-color: white;
-  height: 500px;
+  height: 600px;
 }
 #chiffres .owl-wrapper-outer {
-  height: 400px;
+  height: 600px;
 }
 #chiffres .item {
-  height: 400px;
+  height: 600px;
+} .numbers {
+  font-size: 80px;
+  font-family: "PT Sans Caption";
+  letter-spacing: normal;
+  margin-bottom: 30px;
 }
+#chiffres .item p {
+  /*width: 75%;*/
+  /*padding-left: 20%;*/
+  font-size: 17px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+#chiffres .item .section-title {
+  margin-bottom: 60px;
+}
+
 #timeline {
   background-color: white;
   height: 700px;
@@ -949,7 +988,6 @@ aside.cta-quote span.quote {
 }
 @media (min-width: 992px) {
   .portfolio-carousel .item {
-    padding: 45px 185px 25px;
     text-align: left;
     height: 300px;
     min-height: 100%;
