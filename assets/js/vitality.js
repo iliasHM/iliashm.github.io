@@ -228,6 +228,22 @@
       //   });
       // });
 
+      $(document).bind("scroll.myScroll", function(){
+          if ($(document).scrollTop() >= $('#chiffres').offset().top - 100) {
+            $('.timer').countTo({onComplete: function () {
+              if (jQuery(this).hasClass("percent")) {
+                jQuery(this).append("%");
+              };
+            }});
+            $(document).unbind('.myScroll');
+          }
+      });
+
+
+
+
+
+
       $('.caption-content').hide();
       $('.item').hover(function() {
         jQuery(this).find($('.caption-title')).fadeToggle();
