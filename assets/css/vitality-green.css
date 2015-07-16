@@ -476,7 +476,6 @@ section#manifeste-titre, section#metiers-titre {
 }
 section#about, section#metiers {
   padding: 0px;
-  height: 430px;
 }.container-fluid {
   padding-left: 0px;
   padding-right: 0px;
@@ -506,7 +505,7 @@ section#about div#haut-potentiel h2 {
 section#metiers div#RD, section#metiers div#marketing {
   position: absolute;
   width: 100%;
-  top: 20%;
+  top: 15%;
   text-align: center;
   color: white;
   letter-spacing: 3px;
