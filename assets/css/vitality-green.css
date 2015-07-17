@@ -495,11 +495,19 @@ aside.cta-quote div.author {
 section#about div#haut-potentiel {
   position: absolute;
   width: 100%;
-  top: 30%;
+  top: 0%;
   color: white;
 }
 section#about div#haut-potentiel h2 {
   font-weight: 100;
+}
+
+section#about div#text-potentiel {
+  padding: 5% 10%;
+} p {
+  font-family: "gotham-book-regular";
+  font-size: 17px;
+  line-height: 27px;
 }
 
 section#metiers div#RD, section#metiers div#marketing {
@@ -509,6 +517,10 @@ section#metiers div#RD, section#metiers div#marketing {
   text-align: center;
   color: white;
   letter-spacing: 3px;
+}
+
+section#metiers div#text-marketing {
+  padding: 5% 10%;
 }
 
 section#metiers div#marketing img {
@@ -533,7 +545,10 @@ section#about div#text-enjeu p {
     line-height: 1.7;
     letter-spacing: 0.5px;
   }
-
+.caption-content {
+  padding: 10%;
+  text-align: justify;
+}
 
 @media (min-width: 768px) {
   header {

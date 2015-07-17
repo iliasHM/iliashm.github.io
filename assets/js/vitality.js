@@ -245,10 +245,20 @@
 
 
       $('.caption-content').hide();
-      $('.item').hover(function() {
-        jQuery(this).find($('.caption-title')).fadeToggle();
-        jQuery(this).find($('.caption-img')).fadeToggle();
-        jQuery(this).find($('.caption-content')).fadeToggle(); } );
+      $('.pic').hover(function() {
+        jQuery(this).find($('.caption-title')).fadeOut(500);
+        jQuery(this).find($('.caption-img')).fadeOut(500);
+
+        jQuery(this).find($('.caption-content')).delay(500).fadeIn(500);
+      }, function() {
+        jQuery(this).find($('.caption-content')).fadeOut(500);
+
+        jQuery(this).find($('.caption-title')).delay(500).fadeIn(500);
+        jQuery(this).find($('.caption-img')).delay(500).fadeIn(500);
+
+
+
+      } );
 
       $('#watch-video').hide();
       $('.scroll-down').hover(function() {
