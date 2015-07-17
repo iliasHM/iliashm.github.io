@@ -529,11 +529,11 @@ section#metiers div#marketing img {
 
 section#about div#text-enjeu {
   position: absolute;
-  width: 80%;
-  top: 17%;
+  width: 90%;
   text-align: justify;
   color: white;
-  padding-left: 20%;
+  padding-left: 10%;
+  padding-top: 10%;
 }
 section#about div#text-enjeu h4 {
     font-weight: 100;
@@ -545,8 +545,11 @@ section#about div#text-enjeu p {
     line-height: 1.7;
     letter-spacing: 0.5px;
   }
+.title {
+  padding-top: 20%;
+}
 .caption-content {
-  padding: 10%;
+  /*padding: 10%;*/
   text-align: justify;
 }
 
