@@ -77,7 +77,17 @@ section {
   }
 }
 #springwave {
+  background-color: white;
+  height: 700px;
   color: #36A9E1;
+}
+#springwave .item{
+  float: right;
+  width: 80%;
+  margin-top: 5%;
+}
+#springwave .container-fluid {
+  margin-left: -10%;
 }
 .owl-theme .owl-controls .owl-page span {
   background: rgba(34, 34, 34, 0.5);
@@ -524,7 +534,7 @@ section#metiers div#text-marketing {
 }
 
 section#metiers div#marketing img {
-  padding-bottom: 30px;
+  /*padding-bottom: 30px;*/
 }
 
 section#about div#text-enjeu {
@@ -533,7 +543,7 @@ section#about div#text-enjeu {
   text-align: justify;
   color: white;
   padding-left: 10%;
-  padding-top: 10%;
+  padding-top: 15%;
 }
 section#about div#text-enjeu h4 {
     font-weight: 100;
@@ -545,8 +555,13 @@ section#about div#text-enjeu p {
     line-height: 1.7;
     letter-spacing: 0.5px;
   }
+section#metiers div#text-RD {
+  padding: 5% 10%;
+}
 .title {
+  position: absolute;
   padding-top: 20%;
+  width: 100%;
 }
 .caption-content {
   /*padding: 10%;*/
@@ -954,6 +969,9 @@ aside.cta-quote span.quote {
 .portfolio-carousel .item .project-details {
   padding: 0;
 }
+.portfolio-carousel .item .project-details .btn {
+  background-color: blue;
+}
 .portfolio-carousel .item .project-details img.client-logo {
   margin: 0 auto 25px;
 }
@@ -1006,7 +1024,7 @@ aside.cta-quote span.quote {
 @media (min-width: 992px) {
   .portfolio-carousel .item {
     text-align: left;
-    height: 300px;
+    height: 700px;
     min-height: 100%;
   }
   .portfolio-carousel .item .portfolio-image {
