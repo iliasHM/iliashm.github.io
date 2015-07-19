@@ -78,16 +78,33 @@ section {
 }
 #springwave {
   background-color: white;
-  height: 700px;
-  color: #36A9E1;
+  height: 640px;
+  color: #3778bc;
+}
+#springwave h2 {
+  font-size: 27px;
+  text-align: center;
+}
+#springwave img {
+  width: 50%;
+  margin-left: 26%;
+  padding-bottom: 3%;
+}
+#springwave a {
+  width: 70%;
+  margin-left: 15%;
+  padding: 5%;
+}
+#springwave a:hover {
+  opacity: 1;
+  color: white;
 }
 #springwave .item{
   float: right;
   width: 80%;
-  margin-top: 5%;
 }
 #springwave .container-fluid {
-  margin-left: -10%;
+  margin-left: -25%;
 }
 .owl-theme .owl-controls .owl-page span {
   background: rgba(34, 34, 34, 0.5);
@@ -483,6 +500,10 @@ header .btn-play .right {
 }*/
 section#manifeste-titre, section#metiers-titre {
   color: #3778bc;
+}
+section#springwave-titre {
+  color: #3778bc;
+  padding-bottom: 0px;
 }
 section#about, section#metiers {
   padding: 0px;
@@ -970,7 +991,8 @@ aside.cta-quote span.quote {
   padding: 0;
 }
 .portfolio-carousel .item .project-details .btn {
-  background-color: blue;
+  background-color: #3778bc;
+  opacity: 0.7;
 }
 .portfolio-carousel .item .project-details img.client-logo {
   margin: 0 auto 25px;
@@ -1024,7 +1046,7 @@ aside.cta-quote span.quote {
 @media (min-width: 992px) {
   .portfolio-carousel .item {
     text-align: left;
-    height: 700px;
+    height: 640px;
     min-height: 100%;
   }
   .portfolio-carousel .item .portfolio-image {
@@ -1034,7 +1056,7 @@ aside.cta-quote span.quote {
     padding: 0;
   }
   .portfolio-carousel .item .project-details a {
-    margin: 20% 0 0;
+    margin: 10% 0 0;
   }
   .portfolio-carousel .item .project-details img.client-logo {
     margin: 0 auto 25px 0;
@@ -1372,7 +1394,7 @@ footer.footer .copyright p.small {
 }
 .btn-outline-light:hover,
 .btn-outline-light:focus {
-  color: #3aaa35;
+  color: white;
   background: white;
   outline: none;
 }
