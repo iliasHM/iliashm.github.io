@@ -498,7 +498,7 @@ header .btn-play .right {
   position: absolute;
   background: url('goutte-right.png');
 }*/
-section#manifeste-titre, section#metiers-titre {
+section#manifeste-titre, section#metiers-titre, section#contact-titre {
   color: #3778bc;
 }
 section#springwave-titre, section#histoire-titre, section#equipe-titre, section#partenaires-titre {
