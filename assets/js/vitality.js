@@ -308,9 +308,18 @@
 
             // MixItUp plugin
             // http://mixitup.io
-            $('#portfoliolist').mixitup({
+            $('#equipe .portfoliolist').mixitup({
                 targetSelector: '.portfolio',
-                filterSelector: '.filter',
+                filterSelector: '#equipe .filter',
+                effects: ['fade'],
+                easing: 'snap',
+                // call the hover effect
+                onMixEnd: filterList.hoverEffect()
+            });
+
+            $('#partenaires .portfoliolist').mixitup({
+                targetSelector: '.portfolio',
+                filterSelector: '#partenaires .filter',
                 effects: ['fade'],
                 easing: 'snap',
                 // call the hover effect
@@ -322,7 +331,7 @@
         hoverEffect: function() {
 
             // Simple parallax effect
-            $('#portfoliolist .portfolio').hover(
+            $('.portfoliolist .portfolio').hover(
                 function() {
                     $(this).find('.caption').stop().animate({
                         bottom: 0

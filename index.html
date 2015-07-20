@@ -87,7 +87,7 @@
                         <a class="page-scroll" href="#equipe-titre">L'équipe</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#pricing">Partenaires</a>
+                        <a class="page-scroll" href="#partenaires-titre">Partenaires</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -925,7 +925,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="equipe">
         <div class="container text-center wow fadeIn">
             <div class="row content-row">
                 <div class="col-lg-12">
@@ -949,9 +949,23 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div id="portfoliolist">
+                    <div class="portfoliolist">
+                      <!-- Exemple avec modale -->
 
-                        <div class="portfolio identity" data-cat="identity" href="#portfolioModal1" data-toggle="modal">
+                        <!-- <div class="portfolio identity" data-cat="identity" href="#portfolioModal1" data-toggle="modal">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/people/alvyn-bleu.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Alvyn SEVERIEN</a>
+                                        <span class="text-category">Co-fondateur - CEO</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="portfolio identity" data-cat="identity">
                             <div class="portfolio-wrapper">
                                 <img src="assets/img/people/alvyn-bleu.png" alt="">
                                 <div class="caption">
@@ -964,7 +978,7 @@
                             </div>
                         </div>
 
-                        <div class="portfolio web" data-cat="web" href="#portfolioModal4" data-toggle="modal">
+                        <div class="portfolio web" data-cat="web">
                             <div class="portfolio-wrapper">
                                 <img src="assets/img/people/hugo-bleu.png" alt="">
                                 <div class="caption">
@@ -977,7 +991,7 @@
                             </div>
                         </div>
 
-                        <div class="portfolio web" data-cat="web" href="#portfolioModal3" data-toggle="modal">
+                        <div class="portfolio web" data-cat="web">
                             <div class="portfolio-wrapper">
                                 <img src="assets/img/people/pauline-bleu.png" alt="">
                                 <div class="caption">
@@ -990,7 +1004,7 @@
                             </div>
                         </div>
 
-                        <div class="portfolio graphic" data-cat="graphic" href="#portfolioModal4" data-toggle="modal">
+                        <div class="portfolio graphic" data-cat="graphic">
                             <div class="portfolio-wrapper">
                                 <img src="assets/img/people/samira-bleu.png" alt="">
                                 <div class="caption">
@@ -1003,7 +1017,7 @@
                             </div>
                         </div>
 
-                        <div class="portfolio web" data-cat="web" href="#portfolioModal1" data-toggle="modal">
+                        <div class="portfolio web" data-cat="web">
                             <div class="portfolio-wrapper">
                                 <img src="assets/img/people/eric-bleu.jpg" alt="">
                                 <div class="caption">
@@ -1016,7 +1030,7 @@
                             </div>
                         </div>
 
-                        <div class="portfolio identity" data-cat="identity" href="#portfolioModal2" data-toggle="modal">
+                        <div class="portfolio identity" data-cat="identity">
                             <div class="portfolio-wrapper">
                                 <img src="assets/img/people/gaetan-bleu.png" alt="">
                                 <div class="caption">
@@ -1029,7 +1043,7 @@
                             </div>
                         </div>
 
-                        <div class="portfolio identity" data-cat="identity" href="#portfolioModal3" data-toggle="modal">
+                        <div class="portfolio identity" data-cat="identity">
                             <div class="portfolio-wrapper">
                                 <img src="assets/img/people/mathieu-bleu.png" alt="">
                                 <div class="caption">
@@ -1042,7 +1056,7 @@
                             </div>
                         </div>
 
-                        <div class="portfolio graphic" data-cat="graphic" href="#portfolioModal4" data-toggle="modal">
+                        <div class="portfolio graphic" data-cat="graphic">
                             <div class="portfolio-wrapper">
                                 <img src="assets/img/people/thomas-bleu.png" alt="">
                                 <div class="caption">
@@ -1055,7 +1069,7 @@
                             </div>
                         </div>
 
-                        <div class="portfolio graphic" data-cat="graphic" href="#portfolioModal2" data-toggle="modal">
+                        <div class="portfolio graphic" data-cat="graphic">
                             <div class="portfolio-wrapper">
                                 <img src="assets/img/people/helene-bleu.png" alt="">
                                 <div class="caption">
@@ -1068,7 +1082,7 @@
                             </div>
                         </div>
 
-                        <div class="portfolio web" data-cat="web" href="#portfolioModal1" data-toggle="modal">
+                        <div class="portfolio web" data-cat="web">
                             <div class="portfolio-wrapper">
                                 <img src="assets/img/people/maxime-bleu.png" alt="">
                                 <div class="caption">
@@ -1086,53 +1100,102 @@
             </div>
         </div>
     </section>
+
+
     <section class="testimonials bg-gray">
         <div class="container wow fadeIn">
+            <div class="row text-center">
+              <div class="col-lg-12 wow fadeIn">
+                <h1 class="section-title">Distinctions</h1>
+              </div>
+            </div>
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1">
                     <div class="testimonials-carousel">
+
                         <div class="item">
                             <div class="row">
                                 <div class="col-lg-12">
                                   <div class="col-lg-6">
                                     <p class="lead">SIAL 2014</p>
-                                    <div class="testimonial-info">
+                                    <div class="row" class="testimonial-info">
+                                      <div class="col-lg-6">
                                         <div class="testimonial-img">
                                             <img src="assets/img/prix/sial.png" class="img-responsive" alt="">
                                         </div>
+                                      </div>
+                                      <div class="col-lg-6">
                                         <div class="testimonial-author">
-                                            <span class="name">Prix du Jury</span>
+                                            <span class="name">Grand Prix du Jury</span>
                                             <p class="small">Meilleure boisson innovante</p>
+                                            <a href="http://www.sialparis.fr/Evenements/SIAL-Innovation-nouveautes-et-innovations-alimentaires/Decouvrez-les-Grands-Prix-SIAL-Innovation-2014">Plus d'infos</a>
                                         </div>
+                                      </div>
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
-                                    <p class="lead">Prix 2</p>
-                                  </div>
-                                    <!-- <p class="lead">"Working with Vitality was both a valuable and rewarding experience."</p>
-                                    <hr class="colored">
-                                    <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?</p>
-                                    <div class="testimonial-info">
+                                    <p class="lead">Challenges</p>
+                                    <div class="row" class="testimonial-info">
+                                      <div class="col-lg-6">
                                         <div class="testimonial-img">
-                                            <img src="assets/img/testimonials/1.jpg" class="img-circle img-responsive" alt="">
+                                            <img src="assets/img/prix/challenges.png" class="img-responsive" alt="">
                                         </div>
+                                      </div>
+                                      <div class="col-lg-6">
                                         <div class="testimonial-author">
-                                            <span class="name">Jim Walker</span>
-                                            <p class="small">CEO of GeneriCorp</p>
-                                            <div class="stars">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
+                                            <span class="name">20 innovations agroalimentaires</span>
+                                            <p class="small">Sélectionnée par le magazine</p>
+                                            <a href="http://www.challenges.fr/galeries-photos/entreprise/20140910.CHA7493/agro-alimentaire-20-innovations-a-decouvrir.html">Plus d'infos</a>
                                         </div>
-                                    </div> -->
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="item">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                  <div class="col-lg-6">
+                                    <p class="lead">SIAL 2014</p>
+                                    <div class="row" class="testimonial-info">
+                                      <div class="col-lg-6">
+                                        <div class="testimonial-img">
+                                            <img src="assets/img/prix/sial.png" class="img-responsive" alt="">
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="testimonial-author">
+                                            <span class="name">Grand Prix du Jury</span>
+                                            <p class="small">Meilleure boisson innovante</p>
+                                            <a href="http://www.sialparis.fr/Evenements/SIAL-Innovation-nouveautes-et-innovations-alimentaires/Decouvrez-les-Grands-Prix-SIAL-Innovation-2014">Plus d'infos</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6">
+                                    <p class="lead">Challenges</p>
+                                    <div class="row" class="testimonial-info">
+                                      <div class="col-lg-6">
+                                        <div class="testimonial-img">
+                                            <img src="assets/img/prix/challenges.png" class="img-responsive" alt="">
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="testimonial-author">
+                                            <span class="name">20 innovations agroalimentaires</span>
+                                            <p class="small">Sélectionnée par le magazine</p>
+                                            <a href="http://www.challenges.fr/galeries-photos/entreprise/20140910.CHA7493/agro-alimentaire-20-innovations-a-decouvrir.html">Plus d'infos</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="item">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <p class="lead">"Working with Vitality was both a valuable and rewarding experience."</p>
@@ -1154,6 +1217,200 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <h3>
+                  <a href="https://fr.slideshare.net/secret/iw3wdVJfOmCfX6" target="_blank">Voir l'intégralité des retombées médias 2014-2015</a>
+                </h3>
+              </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="partenaires-titre">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-lg-12 wow fadeIn">
+            <h1 class="section-title">Nos partenaires</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="partenaires">
+        <div class="container text-center wow fadeIn">
+            <div class="row content-row">
+                <div class="col-lg-12">
+                    <div class="portfolio-filter">
+                        <ul id="filters" class="clearfix">
+                            <li>
+                                <span class="filter active" data-filter="recherche compet financement dev">Tous</span>
+                            </li>
+                            <li>
+                                <span class="filter" data-filter="recherche">R&D</span>
+                            </li>
+                            <li>
+                                <span class="filter" data-filter="compet">Pôles de Compétitivité</span>
+                            </li>
+                            <li>
+                                <span class="filter" data-filter="financement">Financement public</span>
+                            </li>
+                            <li>
+                                <span class="filter" data-filter="dev">Développement</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="portfoliolist">
+                        <div class="portfolio dev" data-cat="dev">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/partenaires/accor.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Groupe Accord</a>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio compet" data-cat="compet">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/partenaires/agoranov.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Centre Agoranov</a>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio recherche" data-cat="recherche">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/partenaires/cnrs.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">CNRS</a>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio recherche" data-cat="recherche">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/partenaires/roquette.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Groupe Roquette</a>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio financement" data-cat="financement">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/partenaires/bpi.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Banque publique d'Investissement</a>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio compet" data-cat="compet">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/partenaires/vitagora.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Pôle Vitagora</a>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio dev" data-cat="dev">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/partenaires/PP.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Incubateur Le Petit Poucet</a>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio recherche" data-cat="recherche">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/partenaires/musee.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Musée National d'Histoire Naturelle</a>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio financement" data-cat="financement">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/partenaires/commission.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Commission Européenne</a>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio compet" data-cat="compet">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/partenaires/trimatec.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Pôle Trimatec</a>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio dev" data-cat="dev">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/partenaires/raise.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Raise</a>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio financement" data-cat="financement">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/partenaires/idf.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Région Ile-de-France</a>
+                                    </div>
+                                    <div class="caption-bg"></div>
                                 </div>
                             </div>
                         </div>
@@ -1236,7 +1493,7 @@
         <div class="container wow fadeIn">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Si vous souhaitez nous contacter, vous pouvez nous écrire grâce au formulaire ci-dessous.</p>
+                    <p>Si vous souhaitez nous contacter, écrivez-nous un message grâce au formulaire ci-dessous.</p>
                 </div>
             </div>
             <div class="row content-row">
@@ -1258,7 +1515,7 @@
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Phone Number</label>
+                                <label>Téléphone</label>
                                 <input type="tel" class="form-control" placeholder="Téléphone" id="phone" required data-validation-required-message="Please enter your phone number.">
                                 <p class="help-block text-danger"></p>
                             </div>

@@ -501,7 +501,7 @@ header .btn-play .right {
 section#manifeste-titre, section#metiers-titre {
   color: #3778bc;
 }
-section#springwave-titre, section#histoire-titre, section#equipe-titre {
+section#springwave-titre, section#histoire-titre, section#equipe-titre, section#partenaires-titre {
   color: #3778bc;
   padding-bottom: 0px;
 }
@@ -735,6 +735,15 @@ aside.cta-quote span.quote {
 }
 .testimonials {
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.testimonials h1 {
+  color: #3778bc;
+  padding-bottom: 20px;
+}
+.testimonials a {
+  color: #3778bc;
 }
 .testimonials .testimonials-carousel .item {
   padding: 0;
@@ -786,7 +795,7 @@ aside.cta-quote span.quote {
   margin: auto 0 !important;
   top: 0;
   bottom: 0;
-  background-color: #3aaa35 !important;
+  background-color: #3778bc !important;
   color: white !important;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -1205,36 +1214,48 @@ aside.cta-quote span.quote {
   color: white;
   border-color: #3778bc;
 }
-#portfoliolist .portfolio {
+.portfoliolist .portfolio {
   width: 23%;
   margin: 1%;
   display: none;
   overflow: hidden;
 }
-#portfoliolist .portfolio .portfolio-wrapper {
+section#partenaires .portfoliolist .portfolio {
+  width: 20%;
+  margin: 0%;
+}
+.portfoliolist .portfolio .portfolio-wrapper {
   overflow: hidden;
   position: relative !important;
   background: #222222;
   cursor: pointer;
   width: 230px;
 }
-#portfoliolist .portfolio .portfolio-wrapper img {
+section#partenaires .portfoliolist .portfolio .portfolio-wrapper {
+  background: white;
+  width: 200px;
+}
+section#partenaires .portfoliolist .portfolio .portfolio-wrapper img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+.portfoliolist .portfolio .portfolio-wrapper img {
   max-width: 100%;
   position: relative;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
 }
-#portfoliolist .portfolio .portfolio-wrapper img:hover {
+.portfoliolist .portfolio .portfolio-wrapper img:hover {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
-#portfoliolist .portfolio .portfolio-wrapper .caption {
+.portfoliolist .portfolio .portfolio-wrapper .caption {
   position: absolute;
   width: 100%;
   height: 75px;
   bottom: -75px;
 }
-#portfoliolist .portfolio .portfolio-wrapper .caption .caption-bg {
+.portfoliolist .portfolio .portfolio-wrapper .caption .caption-bg {
   background: white;
   opacity: 0.7;
   width: 100%;
@@ -1243,22 +1264,22 @@ aside.cta-quote span.quote {
   top: 0;
   left: 0;
 }
-#portfoliolist .portfolio .portfolio-wrapper .caption .caption-text {
+.portfoliolist .portfolio .portfolio-wrapper .caption .caption-text {
   color: #3273b8;
   position: relative;
   z-index: 500;
   padding: 15px 8px;
 }
-#portfoliolist .portfolio .portfolio-wrapper .caption .caption-text a.text-title {
+.portfoliolist .portfolio .portfolio-wrapper .caption .caption-text a.text-title {
   color: #3273b8;
 }
-#portfoliolist .portfolio .portfolio-wrapper .caption .caption-text .text-category {
+.portfoliolist .portfolio .portfolio-wrapper .caption .caption-text .text-category {
   display: block;
   font-size: 12px;
 }
 /*  #Mobile (Portrait) - Note: Design for a width of 320px */
 @media only screen and (max-width: 767px) {
-  #portfoliolist .portfolio {
+  .portfoliolist .portfolio {
     width: 48%;
     margin: 1%;
   }
@@ -1436,8 +1457,8 @@ footer.footer .copyright p.small {
 .btn-outline-dark:hover,
 .btn-outline-dark:focus {
   color: white;
-  background: #3aaa35;
-  border-color: #3aaa35;
+  background: #3778bc;
+  border-color: #3778bc;
   outline: none;
 }
 .btn {
