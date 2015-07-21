@@ -1130,7 +1130,7 @@ aside.cta-quote span.quote {
   box-shadow: none;
   border: none;
   min-height: 100%;
-  padding: 100px 0;
+  /*padding: 100px 0;*/
   text-align: center;
 }
 .portfolio-modal .modal-content h2 {
@@ -1138,7 +1138,7 @@ aside.cta-quote span.quote {
   font-size: 46px;
 }
 .portfolio-modal .modal-content img {
-  margin: 30px auto;
+  /*margin: 30px auto;*/
 }
 .portfolio-modal .modal-content p {
   padding: 30% 0;
@@ -1146,7 +1146,15 @@ aside.cta-quote span.quote {
 .portfolio-modal .modal-content .item-details {
   margin: 30px 0;
 }
+.portfolio-modal .modal-content .modal-body {
+  padding: 0px;
+}
+.portfolio-modal .container {
+  width: 100%;
+  padding: 0px;
+}
 .portfolio-modal .close-modal {
+  z-index: 1500;
   position: absolute;
   width: 75px;
   height: 75px;
@@ -1162,7 +1170,7 @@ aside.cta-quote span.quote {
   height: 75px;
   width: 1px;
   margin-left: 35px;
-  background-color: white;
+  background-color: black;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -1173,7 +1181,7 @@ aside.cta-quote span.quote {
 .portfolio-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
-  background-color: white;
+  background-color: black;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE 9 */
