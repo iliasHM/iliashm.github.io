@@ -174,6 +174,12 @@
     // Home switcher
     $(document).ready(function(){
 
+      $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+          event.preventDefault();
+          $(this).ekkoLightbox();
+      });
+
+
       // window.setInterval(function(){
       //   window.setTimeout(function(){
       //       $('#header1').animate({opacity: 0}, 'slow', function() {
