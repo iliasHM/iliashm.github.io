@@ -85,6 +85,7 @@ section {
   font-size: 27px;
   text-align: center;
 }
+
 #springwave img {
   width: 50%;
   margin-left: 26%;
@@ -501,6 +502,7 @@ header .btn-play .right {
 section#manifeste-titre, section#metiers-titre, section#contact-titre {
   color: #3778bc;
 }
+
 section#springwave-titre, section#histoire-titre, section#equipe-titre, section#partenaires-titre {
   color: #3778bc;
   padding-bottom: 0px;
