@@ -742,7 +742,14 @@ aside.cta-quote span.quote {
 }
 .testimonials h1 {
   color: #3778bc;
-  padding-bottom: 20px;
+  padding-top: 30px;
+}
+.testimonials img {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.testimonials h3 {
+  padding: 3%;
 }
 .testimonials a {
   color: #3778bc;
