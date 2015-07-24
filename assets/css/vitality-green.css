@@ -542,6 +542,9 @@ section#about div#text-potentiel {
   font-size: 17px;
   line-height: 27px;
 }
+section#about div#text-potentiel h4 {
+  font-size: 22px;
+}
 
 section#metiers div#RD, section#metiers div#marketing {
   position: absolute;
@@ -556,8 +559,9 @@ section#metiers div#text-marketing {
   padding: 5% 10%;
 }
 
-section#metiers div#marketing img {
-  /*padding-bottom: 30px;*/
+section#metiers div#marketing p {
+  letter-spacing: 0.5px;
+  line-height: 1.9;
 }
 
 section#about div#text-enjeu {
@@ -566,7 +570,7 @@ section#about div#text-enjeu {
   text-align: justify;
   color: white;
   padding-left: 10%;
-  padding-top: 15%;
+  padding-top: 10%;
 }
 section#about div#text-enjeu h4 {
     font-weight: 100;
@@ -574,12 +578,14 @@ section#about div#text-enjeu h4 {
   }
 section#about div#text-enjeu p {
     font-weight: 100;
-    font-size: 15px;
-    line-height: 1.7;
     letter-spacing: 0.5px;
   }
 section#metiers div#text-RD {
   padding: 5% 10%;
+}
+section#metiers div#text-RD p {
+  letter-spacing: 0.5px;
+  line-height: 1.9;
 }
 .title {
   position: absolute;
