@@ -499,11 +499,11 @@ header .btn-play .right {
   position: absolute;
   background: url('goutte-right.png');
 }*/
-section#manifeste-titre, section#metiers-titre, section#contact-titre {
+section#manifeste-titre, section#metiers-titre, section#contact-titre, section#springwave-titre {
   color: #3778bc;
 }
 
-section#springwave-titre, section#histoire-titre, section#equipe-titre, section#partenaires-titre {
+section#histoire-titre, section#equipe-titre, section#partenaires-titre {
   color: #3778bc;
   padding-bottom: 0px;
 }
@@ -1198,6 +1198,12 @@ aside.cta-quote span.quote {
   /* Safari and Chrome */
   z-index: 1052;
 }
+.portfolio-modal button {
+  bottom: 2%;
+  right: 4%;
+  position: absolute;
+}
+
 .portfolio-filter {
   display: inline-block;
 }
